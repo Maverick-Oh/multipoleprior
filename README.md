@@ -1,6 +1,6 @@
 # multipoleprior
 
-A physically-motivated prior for elliptical gravitational lenses with multipole perturbations, implemented as a pure-NumPy module and designed for use with [lenstronomy](https://github.com/lenstronomy/lenstronomy).
+A statistically-motivated prior for elliptical gravitational lenses with multipole perturbations, implemented as a pure-NumPy module and designed for use with [lenstronomy](https://github.com/lenstronomy/lenstronomy).
 
 This package enables joint priors over the lens ellipticity and multipole terms (m=3, m=4), based on externally derived constraints from galaxy structure models. It is lightweight, portable, and easily pluggable into any Lenstronomy likelihood function.
 
@@ -71,5 +71,5 @@ Feel free to explore or adapt them for your own work!
 
 The codes here do the followings:
 
-1) Convert the circular multipoles of 840 S/E0 galaxies measured by Hao et al. 2006 ([link](https://academic.oup.com/mnras/article/370/3/1339/1156586)) data from amplitudes of cosine and sine $(a_m\!/\!a, b_m\!/\!a)$ basis to amplitude and phase $(a_m\!/\!a, \phi_m\!-\!\phi_0)$ basis for $m=3, 4$.
-2) Fit a semi-analytic function to the joint distribution of observed $(a_3\!/\!a, \phi_3\!-\!\phi_0, a_4\!/\!a, \phi_4\!-\!\phi_0, q)$ to provide a semi-analytic prior of multipole parameters with axis ratio $q$.
+1) Convert the circular multipoles of 840 S/E0 galaxies measured by Hao et al. 2006 ([link](https://academic.oup.com/mnras/article/370/3/1339/1156586)) data from amplitudes of cosine and sine $(a_m/a, b_m/a)$ basis to amplitude and phase $(a_m/a, \phi_m-\phi_0)$ basis for $m=3, 4$.
+2) Fit a semi-analytic function to the joint distribution of observed $(a_3/a, \phi_3-\phi_0, a_4/a, \phi_4-\phi_0, q)$ to provide a semi-analytic prior of multipole parameters with axis ratio $q$.
